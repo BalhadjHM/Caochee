@@ -20,7 +20,7 @@ const CompanionCard = ({
 	color,
 }: CompanionCardProps) => {
 	return (
-		<article className={`companion-card ${color}`}>
+		<article className="companion-card" style={{ backgroundColor: color }}>
 			<div className="flex justify-between items-center">
 				<div className="subject-badge">{subject}</div>
 				<button className="companion-bookmark">
@@ -36,7 +36,7 @@ const CompanionCard = ({
                 <p className="text-sm">{duration} min</p>
             </div>
 
-            <Link href={`/companion/${id}`} className="w-full">
+            <Link href={`/companions/${id}`} className="w-full">
                 <button className="btn-primary w-full justify-center">Lunch Lesson</button>
             </Link>
 		</article>

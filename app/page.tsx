@@ -3,6 +3,7 @@ import CompanionList from "@/components/CompanionList";
 import CTA from "@/components/CTA";
 import { Button } from "@/components/ui/button";
 import { recentSessions } from "@/constants";
+import { getSubjectColor } from "@/lib/utils";
 import React from "react";
 
 const Page = () => {
@@ -17,7 +18,7 @@ const Page = () => {
 					topic="Integrals and derivatives"
 					subject="Mathematics"
 					duration={60}
-					color="bg-blue-200"
+					color={getSubjectColor('maths')}
 				/>
 				<CompanionCard
 					id="2"
@@ -25,7 +26,7 @@ const Page = () => {
 					topic="Chemical reactions"
 					subject="Science"
 					duration={45}
-					color="bg-green-200"
+					color={getSubjectColor('science')}
 				/>
 				<CompanionCard
 					id="3"
@@ -33,7 +34,7 @@ const Page = () => {
 					topic="Ancient civilizations"
 					subject="History"
 					duration={30}
-					color="bg-yellow-200"
+					color={getSubjectColor('history')}
 				/>
 			</section>
 
